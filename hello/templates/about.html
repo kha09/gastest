@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>about</title>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/Navbar-With-Button-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+</head>
+
+<body style="background: #1e1e1e;border-right-color: rgb(255,255,255);border-left-color: rgb(255,255,255);">
+    <nav class="navbar navbar-light navbar-expand-md py-3">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="{% url 'index' %}"><span style="color: rgba(255,255,255,0.9);">Gas Detection</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto" style="padding-left: 100px;">
+                    <li class="nav-item" style="color: rgb(255,255,255);"></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'log' %}" style="color: rgb(255,255,255);margin-right: 10px;">Gas Log</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about' %}" style="color: rgb(255,255,255);">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="d-flex d-lg-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center highlight-blue" id="About" style="height: 500px;background: rgba(255,255,255,0);">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center" style="color: #ffffff;font-family: Roboto, sans-serif;font-size: 26.112px;">ABOUT</h2>
+                <hr style="height: 2px;color: rgba(255,255,255,0.81);background-color: #172f76;">
+                <p class="text-center" style="color: #ffffff;font-family: Roboto, sans-serif;font-size: 14px;">The passing away of a loved one is undeniably painful and it is particularly more stressful when you are faced with the task of gathering their assets or administering their Estate.<br><br>Nisel Probate is pleased to take on the responsibility of processing probate documents on your behalf and we are here to take the burden off you from start to finish.</p>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    <script src="{% static 'assets/js/Lightbox-Gallery.js' %}"></script>
+</body>
+
+</html>

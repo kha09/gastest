@@ -9,11 +9,11 @@ def index(request):
     return render(request, "index.html")
 
 
-def db(request):
+def log(request):
+    # return HttpResponse('Hello from Python!')
+    return render(request, "log.html")
 
-    greeting = Greeting()
-    greeting.save()
 
-    greetings = Greeting.objects.all()
-
-    return render(request, "db.html", {"greetings": greetings})
+def about(request):
+    # return HttpResponse('Hello from Python!')
+    return render(request, "about.html")

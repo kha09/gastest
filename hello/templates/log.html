@@ -1,0 +1,114 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>GasLog</title>
+
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/Navbar-With-Button-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+</head>
+
+<body style="background: #1e1e1e;border-right-color: rgb(255,255,255);border-left-color: rgb(255,255,255);">
+    <nav class="navbar navbar-light navbar-expand-md py-3">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="{% url 'index' %}"><span style="color: rgba(255,255,255,0.9);">Gas Detection</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto" style="padding-left: 100px;">
+                    <li class="nav-item" style="color: rgb(255,255,255);"></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'log' %}" style="color: rgb(255,255,255);margin-right: 10px;">Gas Log</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about' %}" style="color: rgb(255,255,255);">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 style="border-right-color: rgb(255,255,255);color: rgb(255,255,255);font-size: 18.52px;margin-top: 50px;">GasVid Logging History</h1>
+            </div>
+        </div>
+    </div>
+    <div class="table-responsive" style="padding-right: 10px;padding-left: 10px;padding-top: 30px;border-right-color: rgb(255,255,255);">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th style="color: rgb(255,255,255);font-size: 12px;border-radius: 0px;border-right: 1px solid rgb(255,255,255);text-align: center;">Video No.</th>
+                    <th style="color: rgb(255,255,255);font-size: 12px;border-radius: 0px;border-right: 1px solid rgb(255,255,255);text-align: center;">Imaging Dis</th>
+                    <th style="color: rgb(255,255,255);font-size: 12px;border-radius: 0px;border-right: 1px solid rgb(255,255,255);text-align: center;">Date</th>
+                    <th style="color: rgb(255,255,255);font-size: 12px;border-radius: 0px;border-right: 1px solid rgb(255,255,255);text-align: center;">Shooting Time</th>
+                    <th style="color: rgb(255,255,255);font-size: 12px;border-radius: 0px;text-align: center;">Start Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">01</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">4.6</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">7/13/17</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">11:28</td>
+                    <td style="color: rgb(255,255,255);text-align: center;border-right-width: 0px;border-right-color: rgb(255,255,255);font-size: 13px;">0:16</td>
+                </tr>
+                <tr style="font-size: 13px;">
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">02</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">6.9</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">7/13/17</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">9:10</td>
+                    <td style="color: rgb(255,255,255);text-align: center;border-right-width: 0px;border-right-color: rgb(255,255,255);font-size: 13px;">0:29</td>
+                </tr>
+                <tr style="font-size: 13px;">
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">03</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">9.8</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">7/13/17</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">9:37</td>
+                    <td style="color: rgb(255,255,255);text-align: center;border-right-width: 0px;border-right-color: rgb(255,255,255);font-size: 13px;">0:17</td>
+                </tr>
+                <tr style="font-size: 13px;">
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">04</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">12.6</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">7/13/17</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">10:04</td>
+                    <td style="color: rgb(255,255,255);text-align: center;border-right-width: 0px;border-right-color: rgb(255,255,255);font-size: 13px;">0:19</td>
+                </tr>
+                <tr style="font-size: 13px;">
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">05</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">15.6</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">7/13/17</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">10:43</td>
+                    <td style="color: rgb(255,255,255);text-align: center;border-right-width: 0px;border-right-color: rgb(255,255,255);font-size: 13px;">0:24</td>
+                </tr>
+                <tr style="font-size: 13px;">
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">06</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">18.6</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">7/13/17</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">11:00</td>
+                    <td style="color: rgb(255,255,255);text-align: center;border-right-width: 0px;border-right-color: rgb(255,255,255);font-size: 13px;">0:11</td>
+                </tr>
+                <tr style="font-size: 13px;">
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">07</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">4.6</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">7/13/17</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">11:30</td>
+                    <td style="color: rgb(255,255,255);text-align: center;border-right-width: 0px;border-right-color: rgb(255,255,255);font-size: 13px;">0:05</td>
+                </tr>
+                <tr style="font-size: 13px;">
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">08</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">6.9</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">7/13/17</td>
+                    <td style="border-right-width: 1px;border-right-color: rgb(255,255,255);color: rgb(255,255,255);text-align: center;font-size: 13px;">9:14</td>
+                    <td style="color: rgb(255,255,255);text-align: center;border-right-width: 0px;border-right-color: rgb(255,255,255);font-size: 13px;">0:19</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    <script src="{% static 'assets/js/Lightbox-Gallery.js' %}"></script>
+</body>
+
+</html>

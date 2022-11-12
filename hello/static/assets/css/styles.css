@@ -8,6 +8,12 @@
 }
 
 .newbtn {
+  transition-duration: 0.1s;
+  margin-top: 17px;
+  background: #606060;
+  padding-right: 34px;
+  padding-left: 32px;
+  border-color: rgba(255,255,255,0);
 }
 
 .btn:hover {
