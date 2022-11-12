@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/Navbar-With-Button-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+</head>
+
+<body style="background: #1e1e1e;">
+    <nav class="navbar navbar-light navbar-expand-md py-3">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span style="color: rgba(255,255,255,0.9);">Gas Detection</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto" style="padding-left: 100px;">
+                    <li class="nav-item" style="color: rgb(255,255,255);"></li>
+                    <li class="nav-item dropdown" style="color: rgb(255,255,255);"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="color: rgb(255,255,255);">Details</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(255,255,255);">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="margin: 0;margin-right: 0;margin-left: 65px;margin-top: 50px;padding-right: 0;padding-left: 012px;">
+        <div class="row">
+            <div class="col-md-4 col-lg-2" style="margin: 0;padding: 0;">
+                <div class="btn-group-vertical" role="group" style="margin: 0;padding: 0;"><button class="btn btn-primary newbtn" type="button" style="border-top-right-radius: 20px;border-bottom-left-radius: 20px;border-style: none;">Section 1</button><button class="btn btn-primary newbtn" type="button" style="border-top-right-radius: 20px;border-bottom-left-radius: 20px;margin-top: 17px;border-style: none;">Section 2</button><button class="btn btn-primary newbtn" type="button" style="border-top-right-radius: 20px;border-bottom-left-radius: 20px;margin-top: 17px;border-style: none;">Section 3</button><button class="btn btn-primary newbtn" type="button" style="border-top-right-radius: 20px;border-bottom-left-radius: 20px;margin-top: 17px;border-style: none;">Section 4</button></div>
+            </div>
+            <div class="col-md-4 col-lg-5 offset-lg-0" style="padding-left: 40px;">
+                <h1 style="color: rgb(184,184,184);font-size: 13.88px;">Camera 01</h1><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/Gtcf5rum3fw?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=Gtcf5rum3fw&amp;controls=0" width="560" height="315" style="width: 400px;"></iframe>
+            </div>
+            <div class="col-md-4 col-lg-5">
+                <h1 style="color: rgb(184,184,184);font-size: 13.88px;">Camera 02</h1><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/Gtcf5rum3fw?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=Gtcf5rum3fw&amp;controls=0" width="560" height="315" style="width: 400px;border-bottom-left-radius: 0;border-top-right-radius: 0;"></iframe>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 27px;">
+            <div class="col-md-4 col-lg-2" style="margin: 0;padding: 0;">
+                <div class="btn-group-vertical" role="group" style="margin: 0;padding: 0;"></div>
+            </div>
+            <div class="col-md-4 col-lg-5 offset-lg-0" style="padding-left: 40px;">
+                <h1 style="color: rgb(184,184,184);font-size: 13.88px;">Camera 03</h1><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/Gtcf5rum3fw?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=Gtcf5rum3fw&amp;controls=0" width="560" height="315" style="width: 400px;"></iframe>
+            </div>
+            <div class="col-md-4 col-lg-5">
+                <h1 style="color: rgb(184,184,184);font-size: 13.88px;">Camera 04</h1><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/Gtcf5rum3fw?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=Gtcf5rum3fw&amp;controls=0" width="560" height="315" style="width: 400px;border-bottom-left-radius: 0;border-top-right-radius: 0;"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <section class="photo-gallery py-4 py-xl-5">
+                <div class="container">
+                    <div class="row mb-5" style="margin-top: 30px;">
+                        <div class="col">
+                            <h2 style="color: rgb(255,255,255);font-size: 20px;margin-bottom: 1px;height: 12px;">Previous Detected gas</h2>
+                        </div>
+                        <div class="col-md-8 col-xl-6 text-center mx-auto"></div>
+                    </div>
+                    <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center photos" data-bss-baguettebox="" style="margin: 0;padding: 0;">
+                        <div class="col item" style="width: 192.656px;height: 153.797px;margin-right: 30px;"><a href="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"><img class="img-fluid" style="width: 197.641px;height: 132.938px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></a></div>
+                        <div class="col item" style="width: 192.656px;height: 153.797px;margin-right: 30px;"><a href="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"><img class="img-fluid" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" style="width: 197.641px;height: 132.938px;"></a></div>
+                        <div class="col item" style="width: 192.656px;height: 153.797px;margin-right: 30px;"><a href="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"><img class="img-fluid" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" style="width: 197.641px;height: 132.938px;"></a></div>
+                        <div class="col item" style="width: 192.656px;height: 153.797px;margin-right: 30px;"><a href="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"><img class="img-fluid" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" style="width: 197.641px;height: 132.938px;"></a></div>
+                        <div class="col item" style="width: 192.656px;height: 153.797px;margin-right: 30px;"><a href="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"><img class="img-fluid" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" style="width: 197.641px;height: 132.938px;"></a></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    <script src="{% static 'assets/js/Lightbox-Gallery.js' %}"></script>
+</body>
+
+</html>
